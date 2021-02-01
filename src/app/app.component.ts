@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular9-google-maps';
+
+  lat = 51.678418;
+  lng = 7.809007;
+
 }
