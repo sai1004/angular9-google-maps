@@ -1,27 +1,51 @@
 # Angular9GoogleMaps
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.12.
 
-## Development server
+    ng new angular9-google-maps
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+    require routing y/n?
 
-## Code scaffolding
+    Y
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+    scss 
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+    cd angular9-google-maps
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+    ng serve -o
 
-## Running end-to-end tests
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+    npm i @agm/core@1.1.0 --save
 
-## Further help
+html
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+    <div class="layout">
+      <div Align="center">
+        <h1>Welcome To Agm Core Google Maps</h1>
+      </div>
+
+      <div>
+        <agm-map [latitude]="lat" [longitude]="lng">
+          <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
+        </agm-map>
+      </div>
+    </div>
+    
+    
+    
+ts
+
+      lat = 51.678418;
+      lng = 7.809007;
+      
+      
+scss
+
+    agm-map {
+        height: 60vh;
+    }
+
+    .layout {
+        margin: 50px;
+    }
