@@ -1,6 +1,13 @@
 # Angular9GoogleMaps
 
 
+
+Heroku Demo:
+
+  https://angular9-google-maps.herokuapp.com/
+  
+  
+  
     ng new angular9-google-maps
 
     require routing y/n?
@@ -49,8 +56,3 @@ scss
     .layout {
         margin: 50px;
     }
-
-
-Heroku:
-
-  https://angular9-google-maps.herokuapp.com/
